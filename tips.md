@@ -16,6 +16,9 @@
     （1）出现这种问题的原因1：DNS 解析出现问题
         解决方法：在 cmd 窗口输入 ipconfig/flushdns ，清除缓存后再重新进行 git 操作即可
     （2）出现问题的原因2：防火墙或代理设置
+    
+    查询：通过git配置文件查看是否使用代理：git config --global http.proxy
+    通过查询系统环境有没有使用代理：env|grep -I proxy
         解决方法：取消代理
         git config --global --unset http.proxy
  
