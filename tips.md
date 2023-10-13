@@ -6,8 +6,12 @@
 1：git push 远程仓库地址 分支名称（可能会有网络的问题--但是我现在变成了两个分支？？？）
     git remote add origin https://github.com/yeshaung1221/git-demo.git
 这个指令的意思代表我们把远程仓库起了一个别名叫origin  
+
+
 2：在第二次推送的时候我们发现不需要输入密码了，是系统里面储存了密码 
 控制面板--凭据管理器--windows凭据-点击可以删除或者编辑
+
+## git push -u远程仓库地址别名 分支名称 -u是记住推送的地址及分支，下次推送只需要输入git push即可
 3在提交的时候输入 git push -u origin master
     那么在下一次输入的时候直接git push 就能提交到远程仓库
 
