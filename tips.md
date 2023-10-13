@@ -10,3 +10,16 @@
 控制面板--凭据管理器--windows凭据-点击可以删除或者编辑
 3在提交的时候输入 git push -u origin master
     那么在下一次输入的时候直接git push 就能提交到远程仓库
+
+## 小tips  ：如何处理git连接不了的问题unable to access 'https://github.com/yeshaung1221/git-demo.git/': Failedto connect to github.com port 443 after 28351 ms: Couldn't connect to server
+
+    （1）出现这种问题的原因1：DNS 解析出现问题
+        解决方法：在 cmd 窗口输入 ipconfig/flushdns ，清除缓存后再重新进行 git 操作即可
+    （2）出现问题的原因2：防火墙或代理设置
+        解决方法：取消代理
+        git config --global --unset http.proxy
+ 
+        git config --global --unset https.proxy
+（提交的时候不要开梯子）
+    （3）也可能是之前用过代理，清除之前的代理即可
+    git config --global --unset http.proxy
