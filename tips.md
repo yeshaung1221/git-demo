@@ -30,3 +30,4 @@
 （提交的时候不要开梯子）
     （3）也可能是之前用过代理，清除之前的代理即可
     git config --global --unset http.proxy
+
